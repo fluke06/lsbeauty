@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "preview": "npm run build && wrangler pages dev out",
+    "deploy": "npm run build && wrangler pages deploy out"
   },
   "dependencies": {
     "gsap": "^3.15.0",
@@ -21,6 +23,7 @@
     "eslint": "^9",
     "eslint-config-next": "16.2.7",
     "playwright": "^1.60.0",
-    "typescript": "^5"
+    "typescript": "^5",
+    "wrangler": "^4.97.0"
   }
 }
